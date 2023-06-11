@@ -1,30 +1,32 @@
 clauses
-	patient("3498484","Rolbinov Leonid Alexandrovich",23,"79654876547","Arbatskaya").
-	patient("5775400", "Preobrazhenskaya Yulia Olegovna",18,"79644374888","Tverskaya").
-	patient("2343256","Drozdov Anton Sergeevich",45,"79744900482","Smolenskaya").
-	patient("3888484","Ryabov Vitaly Romanovich",15,"79654876543","Arbatskaya").
-	patient("1275400", "Volya Nadezhda Nikolevna",60,"79644374566","Taganskaya").
-	patient("4443256","Belyanin Vladimir Mikhailovich",19,"79744900555","Miklukho-Maklaya").
-	patient("6643256","Knyazev Andrey Andreevich",19,"79744900555","Miklukho-Maklaya").	
+  patient("3498484","Rolbinov Leonid Alexandrovich",23,"79654876547","Arbatskaya").
+  patient("5775400", "Preobrazhenskaya Yulia Olegovna",18,"79644374888","Tverskaya").
+  patient("2343256","Drozdov Anton Sergeevich",45,"79744900482","Smolenskaya").
+  patient("3888484","Ryabov Vitaly Romanovich",15,"79654876543","Arbatskaya").
+  patient("1275400", "Volya Nadezhda Nikolevna",60,"79644374566","Taganskaya").
+  patient("4443256","Belyanin Vladimir Mikhailovich",19,"79744900555","Miklukho-Maklaya").
+  patient("6643256","Knyazev Andrey Andreevich",19,"79744900555","Miklukho-Maklaya").  
 
-	doctor("1","Kuznetsov Pavel Andreevich","oncologist","121234",2).
-	doctor("2","Krasovskaya Valeria Dmitrievna","traumatologist","879900",3).
-	doctor("3","Glazov Alexey Antonovich","virologist", "564577",5).
+  doctor("1","Kuznetsov Pavel Andreevich","oncologist","121234",2).
+  doctor("2","Krasovskaya Valeria Dmitrievna","traumatologist","879900",3).
+  doctor("3","Glazov Alexey Antonovich","virologist", "564577",5).
 
-	appointment("oncologist","Rolbinov Leonid Alexandrovich",leukemia,"13_10_2023","yes","treatment is prescribed", 1000).
-	appointment("oncologist","Ryabov Vitaly Romanovich",bone_cancer,"22_11_2023","yes","treatment is prescribed", 150).
-	appointment("oncologist","Preobrazhenskaya Yulia Olegovna",leukemia,"27_04_2023","yes","treatment is prescribed", 1000).
-	appointment("virologist","Rolbinov Leonid Alexandrovich",hiv,"17_10_2023","yes","treatment is prescribed",180).
-	appointment("virologist","Drozdov Anton Sergeevich",flu,"15_11_2023","yes","treatment is prescribed", 10).
-	appointment("virologist","Volya Nadezhda Nikolevna",measles,"17_10_2023","no","treatment is not prescribed",1).
-	appointment("virologist","Belyanin Vladimir Mikhailovich",hiv,"11_10_2023","yes","treatment is prescribed",180).
-	appointment("traumatologist","Belyanin Vladimir Mikhailovich",dislocation,"11_10_2023","no","treatment is not prescribed",1).
-	appointment("traumatologist","Preobrazhenskaya Yulia Olegovna",arthrosis,"27_04_2023","yes","treatment is prescribed",4).
+  appointment("oncologist","Rolbinov Leonid Alexandrovich",leukemia,"13_10_2023","yes","treatment is prescribed", 1000).
+  appointment("oncologist","Ryabov Vitaly Romanovich",bone_cancer,"22_11_2023","yes","treatment is prescribed", 150).
+  appointment("oncologist","Preobrazhenskaya Yulia Olegovna",leukemia,"27_04_2023","yes","treatment is prescribed", 1000).
+  appointment("virologist","Rolbinov Leonid Alexandrovich",hiv,"17_10_2023","yes","treatment is prescribed",180).
+  appointment("virologist","Drozdov Anton Sergeevich",flu,"15_11_2023","yes","treatment is prescribed", 10).
+  appointment("virologist","Volya Nadezhda Nikolevna",measles,"17_10_2023","no","treatment is not prescribed",1).
+  appointment("virologist","Belyanin Vladimir Mikhailovich",hiv,"11_10_2023","yes","treatment is prescribed",180).
+  appointment("traumatologist","Belyanin Vladimir Mikhailovich",dislocation,"11_10_2023","no","treatment is not prescribed",1).
+  appointment("traumatologist","Preobrazhenskaya Yulia Olegovna",arthrosis,"27_04_2023","yes","treatment is prescribed",4).
 
-	treating_doctor("1","3498484").
-	treating_doctor("1","5775400").
-	treating_doctor("1","3888484").
-	treating_doctor("2","5775400").
-	treating_doctor("2","4443256").
-	treating_doctor("3","2343256").
-	treating_doctor("3","1275400").
+  treating_doctor("1","3498484").
+  treating_doctor("1","5775400").
+  treating_doctor("1","3888484").
+  treating_doctor("2","5775400").
+  treating_doctor("2","4443256").
+  treating_doctor("3","2343256").
+  treating_doctor("3","1275400").
+
+  age([23, 18, 45, 15, 60, 19, 19]).
